@@ -3,7 +3,7 @@ import * as U from './util'
 export const randomId = ():string=>faker.random.uuid()
 export const randomName = ():string => faker.name.findName()
 export const randomEmail = ():string=>faker.internet.email()
-export const randomAvatarUil = (name?: string):string => 
+export const randomAvatarUrl = (name?: string):string => 
     U.avatarUriByName(name ?? randomName())
 export const randomDate = ():Date => faker.date.recent()
 export const randomParagraphs = (count: number = 2): string => 

@@ -6,7 +6,7 @@ import * as D from '../data'
 
 const name = D.randomName()
 const avatarUrl = D.randomAvatarUrl(name)
-export default function App(){
+export default function TopBar(){
     return (
         <View style={[styles.view]}>
             <Image style={styles.avatar} source={{uri: avatarUrl}}/>

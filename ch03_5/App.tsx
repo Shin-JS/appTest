@@ -14,8 +14,8 @@ export default function App() {
     <SafeAreaView style={styles.flex}>
       <FlatList data={people}
                 renderItem={({item}) => <Person person={item} />}
-                keyExtractor={(item, index) => item.id}
-                ItemSeparatorComponent={()=> <View style={styles.itemSeparator}/>} />
+                keyExtractor={(item, index) => item.id} /**renderItem이 반환하는 컴포넌트의 key속성에 설정할 값을 얻음 */
+                ItemSeparatorComponent={()=> <View style={styles.itemSeparator}/>} /**구분자 설정 */ />
     </SafeAreaView>
   )
 }

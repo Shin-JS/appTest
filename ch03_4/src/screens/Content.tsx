@@ -1,5 +1,5 @@
 import React from 'react'
-import {StyleSheet, View, Image} from 'react-native'
+import {StyleSheet, View, Image, ScrollView} from 'react-native'
 import * as D from '../data'
 
  const avatars = D.makeArray(200).map((notUsed) => D.randomAvatarUrl())
@@ -9,16 +9,16 @@ import * as D from '../data'
              <Image style={styles.avatar} source={{uri: avatarUrl}} />
          </View>
      ))
-     return <View style={[styles.view]}>{children}</View>
+     return <ScrollView contentContainerStyle={[styles.view]}>{children}</ScrollView>
  }
 
  const styles = StyleSheet.create({
      view: {
          flexDirection: 'row',
-         //overflow: 'hidden'
+         overflow: 'hidden',
          flexWrap: 'wrap',
          justifyContent: 'center',
-         flex: 1,
+         //flex: 1,
          padding: 5
      },
      text: {fontSize: 20},

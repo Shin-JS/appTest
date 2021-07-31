@@ -20,7 +20,7 @@ export default function TopBar(){
 
 const styles = StyleSheet.create({
     view: {
-        flexDirection: 'row',
+        flexDirection: 'row', /**부모 컴포넌트가 자식컴포넌트를 배치할때 방향설정, row, column */
         alignItems: 'center',
         padding: 5,
         backgroundColor: Colors.amber500

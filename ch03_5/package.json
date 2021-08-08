@@ -16,6 +16,7 @@
     "moment-with-locales-es6": "1.0.1",
     "react": "17.0.1",
     "react-native": "0.64.2",
+    "react-native-elements": "3.4.2",
     "react-native-paper": "4.9.2",
     "react-native-vector-icons": "8.1.0"
   },
